@@ -212,7 +212,7 @@ function Index() {
                   I'm an engineering student who fell in love with technology the first time I wrote a program that actually worked. Since then, I've been exploring everything from algorithms to web development.
                 </p>
                 <p>
-                  I enjoy learning by building — whether it's a side project, a hackathon idea or contributing to open source. My goal is to grow into a software engineer who creates technology that makes a real difference.
+                  I enjoy learning by building — whether it's a side project, a hackathon idea or contributing to open source.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-4">
