@@ -8,12 +8,12 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Explore the projects, skills, education and achievements of Aaditya Singh, a B.Tech student building with code.",
+          "Learn about Aaditya Singh, a B.Tech student at JECRC University, Jaipur — skills, education and background.",
       },
       { property: "og:title", content: "Aaditya Singh — B.Tech Student Portfolio" },
       {
         property: "og:description",
-        content: "Projects, skills, education and achievements of Aaditya Singh, B.Tech student.",
+        content: "Skills, education and background of Aaditya Singh, B.Tech student.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -56,7 +56,7 @@ function SocialLinks({ size = "md" }: { size?: "md" | "lg" }) {
   );
 }
 
-const NAV = ["home", "about", "education", "skills", "projects", "achievements", "contact"];
+const NAV = ["home", "about", "education", "skills", "contact"];
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -122,20 +122,6 @@ const skills = {
   Soft: ["Problem Solving", "Teamwork", "Communication", "Leadership", "Time Management", "Adaptability"],
 };
 
-const projects = [
-  { title: "Project One", tags: ["React", "Node.js"], desc: "A short description of what this project does, the problem it solves, and your role in building it." },
-  { title: "Project Two", tags: ["Python", "ML"], desc: "A short description of what this project does, the problem it solves, and your role in building it." },
-  { title: "Project Three", tags: ["Java", "SQL"], desc: "A short description of what this project does, the problem it solves, and your role in building it." },
-  { title: "Project Four", tags: ["IoT", "Arduino"], desc: "A short description of what this project does, the problem it solves, and your role in building it." },
-];
-
-const achievements = [
-  { icon: "🏆", title: "Hackathon Winner", org: "College Tech Fest", year: "2025" },
-  { icon: "📜", title: "Python for Everybody", org: "Coursera", year: "2024" },
-  { icon: "☁️", title: "Cloud Fundamentals", org: "AWS / Google", year: "2025" },
-  { icon: "⭐", title: "Merit Scholarship", org: "University", year: "2024" },
-];
-
 function Contact() {
   const [sent, setSent] = useState(false);
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
@@ -192,9 +178,6 @@ function Index() {
               A B.Tech student passionate about problem solving and turning ideas into real, useful products.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
-              <a href="#projects" className="rounded-lg bg-primary px-6 py-3 font-semibold text-primary-foreground transition hover:opacity-90">
-                View Projects
-              </a>
               <a href="#contact" className="rounded-lg border border-border px-6 py-3 font-semibold transition hover:border-primary hover:text-primary">
                 Get in Touch
               </a>
