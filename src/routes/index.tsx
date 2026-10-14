@@ -206,22 +206,14 @@ function Index() {
         <section id="about" className="section-padding scroll-mt-16 bg-card/40">
           <div className="mx-auto max-w-6xl px-6">
             <SectionTitle eyebrow="About Me" title="Curious mind, builder at heart" />
-            <div className="grid gap-10 md:grid-cols-3">
-              <div className="space-y-4 text-muted-foreground md:col-span-2">
+            <div className="grid gap-10">
+              <div className="space-y-4 text-muted-foreground">
                 <p>
                   I'm an engineering student who fell in love with technology the first time I wrote a program that actually worked. Since then, I've been exploring everything from algorithms to web development.
                 </p>
                 <p>
                   I enjoy learning by building — whether it's a side project, a hackathon idea or contributing to open source.
                 </p>
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                {[["10+", "Projects"], ["5+", "Certificates"], ["3", "Hackathons"], ["∞", "Curiosity"]].map(([n, l]) => (
-                  <div key={l} className="rounded-xl border border-border bg-card p-4 text-center">
-                    <div className="font-display text-2xl font-bold text-primary">{n}</div>
-                    <div className="text-xs text-muted-foreground">{l}</div>
-                  </div>
-                ))}
               </div>
             </div>
           </div>
