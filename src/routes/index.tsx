@@ -215,7 +215,7 @@ function Index() {
               <p className="mt-1 text-primary">Electronic And Communication Engineering</p>
               <p className="mt-1 text-muted-foreground">JECRC University , Jaipur</p>
               <p className="mt-4 text-muted-foreground">
-                CGPA: <span className="font-semibold text-foreground">8.5 / 10</span> · Coursework: Data Structures, Algorithms, DBMS, Operating Systems, Computer Networks.
+                {"\n"}
               </p>
             </div>
           </div>
