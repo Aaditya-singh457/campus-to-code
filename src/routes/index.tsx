@@ -175,7 +175,7 @@ function Index() {
               I build things with <span className="text-gradient">code</span>.
             </h2>
             <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-              I am a 1st Year ECE Student at JECRC University. having good interest in learning C/C++ Programing language and learning new things about technology and help others using it.
+              I am a 1st Year ECE Student at JECRC University. Having good interest in learning C/C++ Programing language and learning new things about technology and help others using it.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <a href="#contact" className="rounded-lg border border-border px-6 py-3 font-semibold transition hover:border-primary hover:text-primary">
