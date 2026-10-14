@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent, type SVGProps } from "react";
-import profileImg from "@/assets/profile.jpg";
+import profileAsset from "@/assets/profile.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -190,10 +190,10 @@ function Index() {
               <div className="relative mx-auto w-full max-w-sm">
                 <div className="absolute -inset-3 rounded-[2rem] bg-primary/20 blur-2xl" aria-hidden />
                 <img
-                  src={profileImg}
+                  src={profileAsset.url}
                   alt="Portrait of Aaditya Singh"
-                  width={880}
-                  height={1104}
+                  width={1000}
+                  height={949}
                   className="relative w-full rounded-[2rem] border border-border object-cover shadow-2xl"
                 />
               </div>
