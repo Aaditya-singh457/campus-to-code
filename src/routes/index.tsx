@@ -118,7 +118,7 @@ function SectionTitle({ eyebrow, title }: { eyebrow: string; title: string }) {
 }
 
 const skills = {
-  Technical: ["C / C++", "React", "SQL", "Git & GitHub", "Linux"],
+  Technical: ["C / C++", "React", "Git & GitHub"],
   Soft: ["Problem Solving", "Teamwork", "Communication", "Leadership", "Time Management", "Adaptability"],
 };
 
