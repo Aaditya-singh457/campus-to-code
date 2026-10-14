@@ -189,7 +189,7 @@ function Index() {
               I build things with <span className="text-gradient">code</span>.
             </h2>
             <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-              A B.Tech student passionate about software development, problem solving and turning ideas into real, useful products.
+              A B.Tech student passionate about problem solving and turning ideas into real, useful products.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <a href="#projects" className="rounded-lg bg-primary px-6 py-3 font-semibold text-primary-foreground transition hover:opacity-90">
