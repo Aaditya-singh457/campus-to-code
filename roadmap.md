@@ -7,4 +7,5 @@
 - [x] Remove "HTML & CSS" skill chip from Skills grid
 - [x] Remove "Linux" skill chip from Skills grid
 - [x] Remove "SQL" skill chip from Skills grid
+- [x] Remove stats cards (Projects / Certificates / Hackathons / Curiosity) from About
 - [ ] Swap placeholder name, university, GitHub/LinkedIn links for real details (waiting on user input)
