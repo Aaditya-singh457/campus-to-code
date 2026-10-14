@@ -8,4 +8,6 @@
 - [x] Remove "Linux" skill chip from Skills grid
 - [x] Remove "SQL" skill chip from Skills grid
 - [x] Remove stats cards (Projects / Certificates / Hackathons / Curiosity) from About
+- [x] Remove Projects section (cards, nav entry, hero "View Projects" button, projects data)
+- [x] Remove Certifications & Achievements section (cards, nav entry, achievements data)
 - [ ] Swap placeholder name, university, GitHub/LinkedIn links for real details (waiting on user input)

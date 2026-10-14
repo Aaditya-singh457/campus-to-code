@@ -8,12 +8,12 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Explore the projects, skills, education and achievements of Aaditya Singh, a B.Tech student building with code.",
+          "Learn about Aaditya Singh, a B.Tech student at JECRC University, Jaipur — skills, education and background.",
       },
       { property: "og:title", content: "Aaditya Singh — B.Tech Student Portfolio" },
       {
         property: "og:description",
-        content: "Projects, skills, education and achievements of Aaditya Singh, B.Tech student.",
+        content: "Skills, education and background of Aaditya Singh, B.Tech student.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -56,7 +56,7 @@ function SocialLinks({ size = "md" }: { size?: "md" | "lg" }) {
   );
 }
 
-const NAV = ["home", "about", "education", "skills", "projects", "achievements", "contact"];
+const NAV = ["home", "about", "education", "skills", "contact"];
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -122,20 +122,6 @@ const skills = {
   Soft: ["Problem Solving", "Teamwork", "Communication", "Leadership", "Time Management", "Adaptability"],
 };
 
-const projects = [
-  { title: "Project One", tags: ["React", "Node.js"], desc: "A short description of what this project does, the problem it solves, and your role in building it." },
-  { title: "Project Two", tags: ["Python", "ML"], desc: "A short description of what this project does, the problem it solves, and your role in building it." },
-  { title: "Project Three", tags: ["Java", "SQL"], desc: "A short description of what this project does, the problem it solves, and your role in building it." },
-  { title: "Project Four", tags: ["IoT", "Arduino"], desc: "A short description of what this project does, the problem it solves, and your role in building it." },
-];
-
-const achievements = [
-  { icon: "🏆", title: "Hackathon Winner", org: "College Tech Fest", year: "2025" },
-  { icon: "📜", title: "Python for Everybody", org: "Coursera", year: "2024" },
-  { icon: "☁️", title: "Cloud Fundamentals", org: "AWS / Google", year: "2025" },
-  { icon: "⭐", title: "Merit Scholarship", org: "University", year: "2024" },
-];
-
 function Contact() {
   const [sent, setSent] = useState(false);
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
@@ -192,9 +178,6 @@ function Index() {
               A B.Tech student passionate about problem solving and turning ideas into real, useful products.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
-              <a href="#projects" className="rounded-lg bg-primary px-6 py-3 font-semibold text-primary-foreground transition hover:opacity-90">
-                View Projects
-              </a>
               <a href="#contact" className="rounded-lg border border-border px-6 py-3 font-semibold transition hover:border-primary hover:text-primary">
                 Get in Touch
               </a>
@@ -256,52 +239,6 @@ function Index() {
                       </span>
                     ))}
                   </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Projects */}
-        <section id="projects" className="section-padding scroll-mt-16">
-          <div className="mx-auto max-w-6xl px-6">
-            <SectionTitle eyebrow="Projects" title="Things I've built" />
-            <div className="grid gap-6 sm:grid-cols-2">
-              {projects.map((p, i) => (
-                <article key={p.title} className="card-glow flex flex-col rounded-2xl border border-border bg-card p-8">
-                  <div className="mb-4 font-display text-sm text-primary">0{i + 1}</div>
-                  <h3 className="font-display text-xl font-bold">{p.title}</h3>
-                  <p className="mt-3 flex-1 text-muted-foreground">{p.desc}</p>
-                  <div className="mt-6 flex flex-wrap gap-2">
-                    {p.tags.map((t) => (
-                      <span key={t} className="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
-                        {t}
-                      </span>
-                    ))}
-                  </div>
-                  <div className="mt-6 flex gap-4 text-sm font-semibold">
-                    <a href={GITHUB} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 hover:text-primary">
-                      <GithubIcon className="h-4 w-4" /> Code
-                    </a>
-                    <a href="#" className="hover:text-primary">Live Demo →</a>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Achievements */}
-        <section id="achievements" className="section-padding scroll-mt-16 bg-card/40">
-          <div className="mx-auto max-w-6xl px-6">
-            <SectionTitle eyebrow="Certifications & Achievements" title="Recognition along the way" />
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {achievements.map((a) => (
-                <div key={a.title} className="card-glow rounded-2xl border border-border bg-card p-6">
-                  <div className="mb-4 text-3xl">{a.icon}</div>
-                  <h3 className="font-display font-bold">{a.title}</h3>
-                  <p className="mt-1 text-sm text-muted-foreground">{a.org}</p>
-                  <p className="mt-3 text-xs font-semibold text-primary">{a.year}</p>
                 </div>
               ))}
             </div>
