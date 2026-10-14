@@ -245,6 +245,7 @@ function Index() {
           </div>
         </section>
 
+        <Contact />
       </main>
 
       <footer className="border-t border-border">
