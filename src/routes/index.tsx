@@ -245,53 +245,6 @@ function Index() {
           </div>
         </section>
 
-        {/* Projects */}
-        <section id="projects" className="section-padding scroll-mt-16">
-          <div className="mx-auto max-w-6xl px-6">
-            <SectionTitle eyebrow="Projects" title="Things I've built" />
-            <div className="grid gap-6 sm:grid-cols-2">
-              {projects.map((p, i) => (
-                <article key={p.title} className="card-glow flex flex-col rounded-2xl border border-border bg-card p-8">
-                  <div className="mb-4 font-display text-sm text-primary">0{i + 1}</div>
-                  <h3 className="font-display text-xl font-bold">{p.title}</h3>
-                  <p className="mt-3 flex-1 text-muted-foreground">{p.desc}</p>
-                  <div className="mt-6 flex flex-wrap gap-2">
-                    {p.tags.map((t) => (
-                      <span key={t} className="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
-                        {t}
-                      </span>
-                    ))}
-                  </div>
-                  <div className="mt-6 flex gap-4 text-sm font-semibold">
-                    <a href={GITHUB} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 hover:text-primary">
-                      <GithubIcon className="h-4 w-4" /> Code
-                    </a>
-                    <a href="#" className="hover:text-primary">Live Demo →</a>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Achievements */}
-        <section id="achievements" className="section-padding scroll-mt-16 bg-card/40">
-          <div className="mx-auto max-w-6xl px-6">
-            <SectionTitle eyebrow="Certifications & Achievements" title="Recognition along the way" />
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {achievements.map((a) => (
-                <div key={a.title} className="card-glow rounded-2xl border border-border bg-card p-6">
-                  <div className="mb-4 text-3xl">{a.icon}</div>
-                  <h3 className="font-display font-bold">{a.title}</h3>
-                  <p className="mt-1 text-sm text-muted-foreground">{a.org}</p>
-                  <p className="mt-3 text-xs font-semibold text-primary">{a.year}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <Contact />
       </main>
 
       <footer className="border-t border-border">
