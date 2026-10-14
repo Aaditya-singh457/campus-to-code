@@ -6,4 +6,5 @@
 - [x] Remove "Data Structures" skill chip from Skills grid
 - [x] Remove "HTML & CSS" skill chip from Skills grid
 - [x] Remove "Linux" skill chip from Skills grid
+- [x] Remove "SQL" skill chip from Skills grid
 - [ ] Swap placeholder name, university, GitHub/LinkedIn links for real details (waiting on user input)
