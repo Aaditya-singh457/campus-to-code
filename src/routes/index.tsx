@@ -118,7 +118,7 @@ function SectionTitle({ eyebrow, title }: { eyebrow: string; title: string }) {
 }
 
 const skills = {
-  Technical: ["C / C++", "Python", "Java", "JavaScript", "React", "HTML & CSS", "SQL", "Git & GitHub", "Data Structures", "Linux"],
+  Technical: ["C / C++", "", "Java", "JavaScript", "React", "HTML & CSS", "SQL", "Git & GitHub", "Data Structures", "Linux"],
   Soft: ["Problem Solving", "Teamwork", "Communication", "Leadership", "Time Management", "Adaptability"],
 };
 
@@ -235,10 +235,10 @@ function Index() {
               <span className="absolute right-6 top-6 rounded-full bg-primary/15 px-3 py-1 text-xs font-semibold text-primary">
                 Currently Pursuing
               </span>
-              <p className="text-sm text-muted-foreground">2023 — 2027</p>
+              <p className="text-sm text-muted-foreground">2026 — 2030</p>
               <h3 className="mt-2 font-display text-2xl font-bold">Bachelor of Technology (B.Tech)</h3>
-              <p className="mt-1 text-primary">Computer Science & Engineering</p>
-              <p className="mt-1 text-muted-foreground">Your University Name, City</p>
+              <p className="mt-1 text-primary">Electronic And Communication Engineering</p>
+              <p className="mt-1 text-muted-foreground">JECRC University , Jaipur</p>
               <p className="mt-4 text-muted-foreground">
                 CGPA: <span className="font-semibold text-foreground">8.5 / 10</span> · Coursework: Data Structures, Algorithms, DBMS, Operating Systems, Computer Networks.
               </p>
