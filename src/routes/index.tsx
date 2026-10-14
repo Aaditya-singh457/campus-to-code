@@ -214,9 +214,6 @@ function Index() {
               <h3 className="mt-2 font-display text-2xl font-bold">Bachelor of Technology (B.Tech)</h3>
               <p className="mt-1 text-primary">Electronic And Communication Engineering</p>
               <p className="mt-1 text-muted-foreground">JECRC University , Jaipur</p>
-              <p className="mt-4 text-muted-foreground">
-                {"\n"}
-              </p>
             </div>
           </div>
         </section>
