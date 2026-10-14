@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent, type SVGProps } from "react";
+import profileImg from "@/assets/profile.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -166,21 +167,36 @@ function Index() {
         {/* Home */}
         <section id="home" className="relative overflow-hidden">
           <div className="pointer-events-none absolute -top-40 right-0 h-[500px] w-[500px] rounded-full bg-primary/10 blur-3xl" />
-          <div className="mx-auto flex min-h-[calc(100vh-4rem)] max-w-6xl flex-col justify-center px-6 py-20">
-            <p className="mb-4 font-display text-primary">Hi there, I'm</p>
-            <h1 className="font-display text-5xl font-extrabold leading-tight md:text-7xl">
-              Aaditya Singh<span className="text-primary">.</span>
-            </h1>
-            <h2 className="mt-3 font-display text-3xl font-bold text-muted-foreground md:text-5xl">
-              I build things with <span className="text-gradient">code</span>.
-            </h2>
-            <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-              I am a 1st Year ECE Student at JECRC University. Having good interest in learning C/C++ Programing language and learning new things about technology and help others using it.
-            </p>
-            <div className="mt-10 flex flex-wrap gap-4">
-              <a href="#contact" className="rounded-lg border border-border px-6 py-3 font-semibold transition hover:border-primary hover:text-primary">
-                Get in Touch
-              </a>
+          <div className="mx-auto flex min-h-[calc(100vh-4rem)] max-w-6xl items-center px-6 py-20">
+            <div className="grid w-full items-center gap-12 md:grid-cols-[1.15fr_0.85fr]">
+              <div>
+                <p className="mb-4 font-display text-primary">Hi there, I'm</p>
+                <h1 className="font-display text-5xl font-extrabold leading-tight md:text-7xl">
+                  Aaditya Singh<span className="text-primary">.</span>
+                </h1>
+                <h2 className="mt-3 font-display text-3xl font-bold text-muted-foreground md:text-5xl">
+                  I build things with <span className="text-gradient">code</span>.
+                </h2>
+                <p className="mt-6 max-w-xl text-lg text-muted-foreground">
+                  I am a 1st Year ECE Student at JECRC University. Having good interest in learning C/C++ Programing language and learning new things about technology and help others using it.
+                </p>
+                <div className="mt-10 flex flex-wrap items-center gap-4">
+                  <a href="#contact" className="rounded-lg border border-border px-6 py-3 font-semibold transition hover:border-primary hover:text-primary">
+                    Get in Touch
+                  </a>
+                  <SocialLinks />
+                </div>
+              </div>
+              <div className="relative mx-auto w-full max-w-sm">
+                <div className="absolute -inset-3 rounded-[2rem] bg-primary/20 blur-2xl" aria-hidden />
+                <img
+                  src={profileImg}
+                  alt="Portrait of Aaditya Singh"
+                  width={880}
+                  height={1104}
+                  className="relative w-full rounded-[2rem] border border-border object-cover shadow-2xl"
+                />
+              </div>
             </div>
           </div>
         </section>
