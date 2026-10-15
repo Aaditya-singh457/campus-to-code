@@ -190,7 +190,7 @@ function Index() {
               <div className="relative mx-auto w-full max-w-sm">
                 <div className="absolute -inset-3 rounded-[2rem] bg-primary/20 blur-2xl" aria-hidden />
                 <img
-                  src="[https://raw.githubusercontent.com/Aaditya-singh457/campus-to-code/main/public/profile.jpg](https://raw.githubusercontent.com/Aaditya-singh457/campus-to-code/main/public/profile.jpg)"
+                  src="/profile.jpg"
                   alt="Portrait of Aaditya Singh"
                   width={1000}
                   height={949}
